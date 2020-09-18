@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KubernetesConnectivityTest", "KubernetesConnectivityTest.csproj", "{5C0057CC-FFCD-47EA-8A8F-CF4D8EF1624B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KubernetesNetworkTest.Web", "KubernetesNetworkTest.Web\KubernetesNetworkTest.Web.csproj", "{E1677266-EC5C-4ACA-B592-FD6113FD98CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KubernetesNetworkTest.Console", "KubernetesNetworkTest.Console\KubernetesNetworkTest.Console.csproj", "{FD8F294D-A8F9-4DCD-8BB6-B5A1534CA33F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5C0057CC-FFCD-47EA-8A8F-CF4D8EF1624B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C0057CC-FFCD-47EA-8A8F-CF4D8EF1624B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C0057CC-FFCD-47EA-8A8F-CF4D8EF1624B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C0057CC-FFCD-47EA-8A8F-CF4D8EF1624B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1677266-EC5C-4ACA-B592-FD6113FD98CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1677266-EC5C-4ACA-B592-FD6113FD98CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1677266-EC5C-4ACA-B592-FD6113FD98CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1677266-EC5C-4ACA-B592-FD6113FD98CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD8F294D-A8F9-4DCD-8BB6-B5A1534CA33F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD8F294D-A8F9-4DCD-8BB6-B5A1534CA33F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD8F294D-A8F9-4DCD-8BB6-B5A1534CA33F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD8F294D-A8F9-4DCD-8BB6-B5A1534CA33F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

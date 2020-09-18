@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace KubernetesNetworkTest
+namespace KubernetesNetworkTest.Web
 {
   public class Program
   {
