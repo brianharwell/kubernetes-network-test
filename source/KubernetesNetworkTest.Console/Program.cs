@@ -21,7 +21,7 @@ namespace KubernetesNetworkTest.Console
 
       try
       {
-        var httpClient = new HttpClient();
+        var httpClient = new HttpClient() { Timeout = TimeSpan.FromSeconds(5) };
         var httpResponseMessage = await httpClient.GetAsync(url);
 
         if (!httpResponseMessage.IsSuccessStatusCode)
@@ -29,16 +29,17 @@ namespace KubernetesNetworkTest.Console
           System.Console.WriteLine($"ERROR: Connection failed: {(int)httpResponseMessage.StatusCode} ({httpResponseMessage.StatusCode})");
 
           Environment.ExitCode = 1;
-
-          return;
         }
-
-        System.Console.WriteLine("Connection succeeded");
+        else
+        {
+          System.Console.WriteLine("Connection succeeded");
+        }
       }
       catch (Exception exception)
       {
-        System.Console.WriteLine(exception);
-        throw;
+        System.Console.WriteLine($"ERROR: Connection failed: {exception.Message}");
+
+        Environment.ExitCode = 1;
       }
     }
   }
