@@ -19,8 +19,6 @@ namespace KubernetesNetworkTest.Console
 
       var url = args[0];
 
-      System.Console.WriteLine($"Connecting to '{url}'");
-
       try
       {
         var httpClient = new HttpClient();
