@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KubernetesConnectivityTest", "KubernetesConnectivityTest.csproj", "{5C0057CC-FFCD-47EA-8A8F-CF4D8EF1624B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C0057CC-FFCD-47EA-8A8F-CF4D8EF1624B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0057CC-FFCD-47EA-8A8F-CF4D8EF1624B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0057CC-FFCD-47EA-8A8F-CF4D8EF1624B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0057CC-FFCD-47EA-8A8F-CF4D8EF1624B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9227EB7C-00A2-416F-924B-9A32561D00E2}
+	EndGlobalSection
+EndGlobal
