@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: networktestlinux
+spec:
+  selector:
+      matchLabels:
+        networktest: linux
+  template:
+    metadata:
+      labels:
+        networktest: linux
+    spec:
+      tolerations:
+        - operator: Exists
+        - key: cattle.io/os
+          operator: Equal
+          value: linux
+      nodeSelector:
+          kubernetes.io/os: linux
+      containers:
+        - image: brianharwell/kubernetesnetworktest:linux
+          imagePullPolicy: Always
+          name: test
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: networktestwin
+spec:
+  selector:
+      matchLabels:
+        networktest: windows
+  template:
+    metadata:
+      labels:
+        networktest: windows
+    spec:
+      nodeSelector:
+        kubernetes.io/os: windows
+      containers:
+        - image: brianharwell/kubernetesnetworktest:1809
+          imagePullPolicy: Always
+          name: test
