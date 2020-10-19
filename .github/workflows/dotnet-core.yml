@@ -19,6 +19,7 @@ jobs:
         dotnet-version: 3.1.301
     - name: Install dependencies
       run: dotnet restore
+      working-directory: /source
     - name: test
       run: dir
       working-directory: source/KubernetesNetworkTest.Console
